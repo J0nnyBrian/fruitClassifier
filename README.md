@@ -1,2 +1,51 @@
 # fruitClassifier
 Machine Learning project for classifying apples, bananas and grapes using Logistic Regression and Decision Trees.
+
+# FruitClassifier Project
+
+## Projektziel
+
+Ziel dieses Projektes ist die Entwicklung eines Machine-Learning-Modells zur Klassifikation von Äpfeln, Bananen und Trauben anhand verschiedener Merkmale wie Farbe, Größe und Gewicht.
+
+## User Stories
+
+### Datenanalyse
+- Als Data Scientist möchte ich die Struktur des Datensatzes analysieren, damit ich die vorhandenen Merkmale verstehe.
+- Als Data Scientist möchte ich fehlende Werte identifizieren, damit unvollständige Daten das Modell nicht beeinflussen.
+
+### Datenaufbereitung
+- Als Entwickler möchte ich kategoriale Werte numerisch kodieren, damit Machine-Learning-Modelle die Daten verarbeiten können.
+
+### Modellierung
+- Als Entwickler möchte ich eine logistische Regression trainieren, damit lineare Zusammenhänge erkannt werden können.
+
+### Evaluation
+- Als Nutzer möchte ich Accuracy und F1-Score sehen, damit die Modellleistung bewertet werden kann.
+
+## Datenverständnis
+
+Der Datensatz besteht aus 200 Einträgen mit den Merkmalen:
+- fruit_type
+- color
+- size
+- weight
+
+Zusätzlich enthielt der Datensatz die Spalte Unnamed: 0, welche für die Klassifikation nicht benötigt wird.
+
+### Analyse der Daten
+
+Zur ersten Analyse wurden folgende Methoden verwendet:
+
+- `head()` zur Anzeige der ersten Datensätze
+- `info()` zur Überprüfung der Datentypen
+- `describe()` zur Berechnung statistischer Kennzahlen
+- `unique()` zur Analyse kategorialer Werte
+- `isna()` zur Prüfung fehlender Werte
+
+### Ergebnisse der Analyse
+
+Die Analyse zeigte:
+- Es existieren keine fehlenden Werte im Datensatz.
+- In der Spalte `size` wurde der fehlerhafte Wert `Largee` erkannt.
+- In der Spalte `weight` wurde ein möglicher Ausreißer mit dem Wert `250` festgestellt.
+- Die Spalte `Unnamed: 0` war für die Modellierung nicht relevant.
